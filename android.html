@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>ExtraByte-Androed</title>
+  <meta name="title" content=" ">
+  <meta name="description" content=" ">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="/assets/images/Logo.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./android.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="/index.html" class="logoH">
+        <img src="/assets/images/Logo.png" width="160" height="30" alt="ExtraByte logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="/assets/images/Logo.png" width="162" height="50" alt="ExtraByte logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="/index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/redirect/courses.html" class="navbar-link" data-nav-link>Courses</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/redirect/contact.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search">
+          <a href="/redirect/courses.html"> <ion-icon name="search-outline" aria-hidden="true"></ion-icon></a>
+        </button>
+
+        <button class="header-action-btn" aria-label="cart" title="Cart">
+          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+        <a href="#" class="btn has-before">
+          <span class="span">Try for free</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+  <!-- Cpyright -->
+   <div class="bodyv">
+    <div class="containerv">
+        <h1 class="headerv">Android Development Course Curriculum</h1>
+        <div class="info">
+            <div>47 video tutorials</div>
+            <div>5 assignments</div>
+            <div>2 projects</div>
+            <div>2 AI tools covered</div>
+        </div>
+        <p>After completing the training, you can also download videos for future reference.</p>
+
+        <!-- Introduction to Machine Learning 1-->
+
+        <div class="sectionv">
+            <div class="sectionv-header" onclick="toggleSection('intro-ml')">
+                <h2>Module 1: Introduction to Android Development</h2>
+                <p>2 Topics &nbsp; | &nbsp; 6 videos inside</p>
+            </div>
+            <div class="sectionv-content" id="intro-ml">
+                <ul>
+                    <li onclick="toggleSubSection('video1')">1. Introduction to Android
+                        <ul id="video1" class="video-section">
+                            <li><a href="#">○ History and evolution of Android</a></li>
+                            <li><a href="#">○ Overview of Android architecture a components</a></li>
+                             <li><a href="#">○ Setting up Android Studio and your development environment</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li onclick="toggleSubSection('video2')">2. Understanding Android Project Structure
+                        <ul id="video2" class="video-section">
+                            <li><a href="#">○ Files and directories in an Android project</a></li>
+                            <li><a href="#">○ Manifest file and Gradle build system</a></li>
+                            <li><a href="#">○ Introduction to XML and Android resources (drawables, layouts, values)</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Fundamentals of Data 2-->
+        <div class="sectionv">
+            <div class="sectionv-header" onclick="toggleSection('fundamentals-data')">
+                <h2>Module 2: Android UI & Layout</h2>
+                <p>3 Topics &nbsp; | &nbsp; 18 video inside</p>
+            </div>
+            <div class="sectionv-content" id="fundamentals-data">
+                <ul>
+                    <li onclick="toggleSubSection('video5')">1. Introduction to Layouts
+                        <ul id="video5" class="video-section">
+                            <li><a href="#">○ LinearLayout, RelativeLayout, ConstraintLayout, FrameLayout</a></li>
+                           
+                            <li><a href="#">○  Understanding View hierarchy</a></li>
+                            <li><a href="#">○ Creating layouts using XML and the Layout Editor</a></li>
+                            
+
+                        </ul>
+                    </li>
+                    <li onclick="toggleSubSection('video6')">2. UI Components & Views
+                        <ul id="video6" class="video-section">
+                            <li><a href="#">○ TextView, EditText, Button, ImageView, ScrollView</a></li>
+                            <li><a href="#">○ Input controls: CheckBox, RadioButton, ToggleButton, Spinner, SeekBar</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li onclick="toggleSubSection('video7')">3. RecyclerView and ListView
+                        <ul id="video7" class="video-section">
+                            <li><a href="#">○ Difference between RecyclerView and ListView</a></li>
+                            <li><a href="#">○ Implementing a RecyclerView with an Adapter</a></li>
+                            <li><a href="#">○ Handling item clicks in RecyclerView</a></li>
+                        </ul>
+                    </li>     
+                </ul>
+            </div>
+        </div>
+
+        <!-- Activities data 3-->
+
+<div class="sectionv">
+            <div class="sectionv-header" onclick="toggleSection('Activities')">
+                <h2>Module 3: Activities & Navigation</h2>
+                <p>3 Topics &nbsp; | &nbsp; 9 videos inside</p>
+            </div>
+            <div class="sectionv-content" id="Activities">
+                <ul>
+                    <li onclick="toggleSubSection('video11')">1. Activities and Intents
+                        <ul id="video11" class="video-section">
+                            <li><a href="#" >○ Understanding the Activity lifecycle</a></li>
+
+                            <li><a href="#">○ Starting a new Activity and passing data between Activities using Intents</a></li>
+
+                             <li><a href="#">○ Handling activity states and saving instance states</a></li>
+                        </ul>
+                        
+                    </li>
+                    <li onclick="toggleSubSection('video12')">2. Fragments
+                        <ul id="video12" class="video-section">
+                            <li><a href="#">○ Introduction to Fragments and Fragment lifecycle</a></li>
+
+                            <li><a href="#">○ Managing Fragment transactions and back stack</a></li>
+
+                            <li><a href="#">○ Communicating between Fragments</a></li>
+                        </ul>
+                    </li>
+
+                     <li onclick="toggleSubSection('video13')">3. Navigation and Navigation Component
+                        <ul id="video13" class="video-section">
+                            <li><a href="#"> ○ Introduction to Navigation components</a></li>
+                            <li><a href="#">  ○ Adding navigation between screens</a></li>
+                            <li><a href="#">○ Introduction to XML and Android resources (drawables, layouts, values)</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <!-- Firebase integation 4-->
+     
+    
+<div class="sectionv">
+            <div class="sectionv-header" onclick="toggleSection('Activities4')">
+                <h2>Module 4: Firebase Integration</h2>
+                <p>3 Topics &nbsp; | &nbsp; 6 videos inside</p>
+            </div>
+            <div class="sectionv-content" id="Activities4">
+                <ul>
+                    <li onclick="toggleSubSection('video14')">1. Firebase Authentication
+                        <ul id="video14" class="video-section">
+                            <li><a href="#" >○ Setting up Firebase in Android</a></li>
+
+                            <li><a href="#">○ Implementing email/password and Google authentication</a></li>
+ 
+                        </ul>
+                        
+                    </li>
+                    <li onclick="toggleSubSection('video15')">2. Firebase Realtime Database & Firestore
+                        <ul id="video15" class="video-section">
+                            <li><a href="#">○ Storing and syncing data with Firebase Realtime Database</a></li>
+
+                            <li><a href="#">○ Using Cloud Firestore for real-time data access and syncingk</a></li>
+
+                            
+                        </ul>
+                    </li>
+
+                     <li onclick="toggleSubSection('video16')">3. Firebase Cloud Messaging (FCM)
+                        <ul id="video16" class="video-section">
+                            <li><a href="#"> ○ Implementing push notifications with FCMs</a></li>
+                            <li><a href="#">  ○ Handling message delivery and notification displays</a></li>
+                             
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+<!-- Diployment 5-->
+
+<div class="sectionv">
+            <div class="sectionv-header" onclick="toggleSection('Activities5')">
+                <h2>Module 5: Deployment & Testing</h2>
+                <p>3 Topics &nbsp; | &nbsp; 6 videos inside</p>
+            </div>
+            <div class="sectionv-content" id="Activities5">
+                <ul>
+                    <li onclick="toggleSubSection('video17')">1. Unit Testing & UI Testing
+
+                        <ul id="video17" class="video-section">
+                             <li><a href="#" >○ Writing unit tests using JUnit and Mockito</a></li>
+                            <li><a href="#" >○ Creating UI tests using Espresso and UI Automator</a></li>
+ 
+                        </ul>
+                        
+                    </li>
+                    <li onclick="toggleSubSection('video18')">2. Debugging & Error Handling
+                        <ul id="video18" class="video-section">
+                            <li><a href="#">○ Debugging techniques using Android Studio</a></li>
+
+                            <li><a href="#">○ Handling runtime errors and crashes</a></li>
+
+                            
+                        </ul>
+                    </li>
+
+                     <li onclick="toggleSubSection('video19')">3. Releasing Your App
+                        <ul id="video19" class="video-section">
+                            <li><a href="#"> ○ Signing APKs and creating release builds</a></li>
+                            <li><a href="#">  ○ Publishing apps to Google Play Store</a></li>
+                             
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+ 
+    <!-- capston project 66-->
+     <div class="sectionv">
+            <div class="sectionv-header" onclick="toggleSection('Activities6')">
+                <h2>Module 6: Capstone Project</h2>
+                <p>1 Topics &nbsp; | &nbsp; 2 videos inside</p>
+            </div>
+            <div class="sectionv-content" id="Activities6">
+                <ul>
+                    <li onclick="toggleSubSection('video21')">1. Capstone Project
+
+                        <ul id="video21" class="video-section">
+                             <li><a href="#" >○ A final project to develop a complete app</a></li>
+                            <li><a href="#" >○ Incorporating all key concepts learned: UI, data storage, networking, and
+advanced features</a></li>
+ 
+                        </ul>
+                        
+                    </li> 
+                    
+                </ul>
+            </div>
+        </div>
+        
+    
+        <a href="#" class="btn has-before couresbtn">
+          <span class="span">Checkout</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>  
+    
+      </div>
+    
+</div>
+
+  <!-- Footer -->
+
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="/index.html" class="logo">
+            <img src="/assets/images/Logo_B.png" width="150" alt="logo">
+          </a>
+
+          <ul class="social-list">
+            <li>
+              <a href="https://www.linkedin.com/company/extrabyte/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/extrabyte.in/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="/redirect/t&c.html" class="footer-link">Term and Condition</a>
+          </li>
+
+          <li>
+            <a href="/redirect/cookies.html" class="footer-link">Use of Cookies</a>
+          </li>
+
+          <li>
+            <a href="/redirect/privacy.html" class="footer-link">Privacy Policies</a>
+          </li>
+
+
+          <li>
+            <a href="/redirect/refund.html" class="footer-link">Refund/Cancellation Policy</a>
+          </li>
+
+
+          <li>
+            <a href="/redirect/time&mode.html" class="footer-link">Time & Mode of Delivery</a>
+          </li>
+
+
+        </ul>
+
+        <div class="footer-list"></div>
+
+
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+            <a href="//mail.google.com/mail/?view=cm&fs=1&to=support@extrabyte.in&su=Subject%20Here&body=Body%20Here"
+              class="footer-link">support@extrabyte.in </a>
+          </div>
+          <br>
+          <div class="wrapper">
+            <span class="span">Address:</span>
+
+            <P class="address">ExtraByte Learning, 327, Mahendru,
+              Ashok Rajpath Road, Patna, Bihar,
+              India
+              Pincode: 800006
+            </P>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          © 2024 All Rights Reserved by <a href="#" class=""> ExtraByte Learning</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+ 
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="/assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
